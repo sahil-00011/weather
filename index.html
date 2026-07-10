@@ -12,13 +12,15 @@
     </head>        
         
     <body>
+        <div class="background-layer bg-layer-1"></div>
+        <div class="background-layer bg-layer-2"></div>
 
         <div class="weather-app">
             <form class="search-form" action="">
                 <input
                     class="city-input"
                     type="text"
-                    placeholder="Enter City Name"
+                    placeholder="Enter city name"
                 />
                 <button class="search-btn" type="submit">
                     <i class="material-icons">search</i>
@@ -53,11 +55,37 @@
                 <div class="visibility-info">
                     <i class="material-icons">visibility</i>
                     <div>
-                        <h3 class="visibility-distance">4 KM/H</h3>
-                        <p class="visibility">Visibility</p>33
+                        <h3 class="visibility-distance">4 km</h3>
+                        <p class="visibility-label">Visibility</p>
                     </div>
                 </div>
             </div>
+            <section class="forecast-section">
+                <div class="forecast-header">
+                    <h3>3-Day Forecast</h3>
+                    <p class="forecast-subtitle">Predicted weather for the next few days</p>
+                </div>
+                <div class="forecast-cards">
+                    <div class="forecast-card day-1">
+                        <p class="forecast-day">Day 1</p>
+                        <i class="material-icons forecast-icon">wb_sunny</i>
+                        <p class="forecast-desc">Clear</p>
+                        <p class="forecast-temp">24°C / 18°C</p>
+                    </div>
+                    <div class="forecast-card day-2">
+                        <p class="forecast-day">Day 2</p>
+                        <i class="material-icons forecast-icon">cloud</i>
+                        <p class="forecast-desc">Cloudy</p>
+                        <p class="forecast-temp">22°C / 17°C</p>
+                    </div>
+                    <div class="forecast-card day-3">
+                        <p class="forecast-day">Day 3</p>
+                        <i class="material-icons forecast-icon">grain</i>
+                        <p class="forecast-desc">Rain</p>
+                        <p class="forecast-temp">20°C / 16°C</p>
+                    </div>
+                </div>
+            </section>
         </div>
 
         <script src="script.js"></script>
